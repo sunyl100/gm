@@ -1,0 +1,5 @@
+#jdbcUrl = jdbc:mysql://127.0.0.1:3306/jfinal_demo?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull
+jdbcUrl = jdbc:mysql://172.16.248.99:9010/gm?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull
+user = gm
+password = gmgm
+devMode = true
