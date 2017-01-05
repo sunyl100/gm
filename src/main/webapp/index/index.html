@@ -1,15 +1,65 @@
-<#include "/common/_layout.html"/>
-<@layout>
-<h1>JFinal Demo 项目首页</h1>
-<div class="table_box">
-	<p>欢迎来到 JFinal极速开发世界！</p>
-	
-	<br><br><br>
-	
-	本Demo采用FreeMarker 作为视图文件，您还可以使用Jsp、Velocity或自定义类型视图。
-	点击<a href="/blog"><b>此处</b></a>开始试用Demo。
-	
-	<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-	<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>物资管理系统</title>
+</head>
+<link href="../bootstrap/css/bootstrap.css" rel="stylesheet">
+<script src="../js/jquery-3.1.1.min.js"></script>
+<script src="../bootstrap/js/bootstrap.js"></script>
+<body>
+
+<div id="container" style="width:100%;height: 600px;">
+	<!--top-->
+	<div id="header" style="background-color:#FFA500;height: 20%;width: 100%;">
+		<div class="container">
+			<div class="row clearfix">
+				<div class="col-md-3 column">
+					<img alt="30x30" height="100%" width="20%;" height="100%;" src="../img/default3.jpg" />
+				</div>
+				<div class="col-md-7 column">
+					<h3>
+						这是一套可视化布局系统.
+					</h3>
+				</div>
+			</div>
+			<a href="#">返回</a>
+			<a href="#">首页</a>
+		</div>
+	</div>
+	<!--left-->
+	<div id="menu" style="background-color:#FFD700;height:70%;width:10%;float:left;">
+		<div class="panel-heading">
+			<a class="panel-title" data-toggle="collapse" data-parent="#panel-940622" href="#panel-element-84567">用户管理</a>
+		</div>
+		<div id="panel-element-84567" class="panel-collapse collapse in">
+			<div class="panel-body">
+				<a href="../good/table.html" target="content">用户操作</a>
+			</div>
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<a class="panel-title" data-toggle="collapse" data-parent="#panel-940622" href="#panel-element-539679">物资管理</a>
+			</div>
+			<div id="panel-element-539679" class="panel-collapse collapse">
+				<div class="panel-body">
+					<a href="../good/show.jsp" target="content">物资列表</a>
+				</div><div class="panel-body">
+					<a href="../good/panel.html" target="content">物资信息</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--content-->
+	<div id="content" style="background-color:#EEEEEE;height:70%;width:90%;float:left;">
+		<iframe name="content"  style="width: 100%;height: 100%;" >
+		</iframe>
+		内容在这里
+	</div>
+	<!--foot-->
+	<div id="footer" style="background-color:#FFA500;height:10%;width:100%;clear:both;text-align:center;">
+		版权 © runoob.com</div>
+
 </div>
-</@layout>
+</body>
+</html>
